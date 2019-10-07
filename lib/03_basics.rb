@@ -31,10 +31,12 @@ def array_42(x)
     end
 end
 
-a = [[32, 54], [48, 12], [21, [1, 2, [3]]], 7, 8]
-puts a.flatten.sort.collect { |n| n * 2 }.reject! {|x| x % 3 == 0}.uniq
-# b = [1, 2, 3, 6]
-# puts b.reject! {|x| x % 3 == 0}
+def magic_array(x)
+    puts x.flatten.sort.collect { |n| n * 2 }.reject! {|x| x % 3 == 0}.uniq
+end
+
+magic_array([1, [2, 3], 4, 5, 6, 23, 31, [1, 2, 3]])
+
 
 
 
